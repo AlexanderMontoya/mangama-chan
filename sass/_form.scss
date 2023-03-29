@@ -1,0 +1,41 @@
+.form{
+    width: 100%;
+    background-color: rgb(231, 226, 226);
+    padding: 50px 0px;
+    &__content{
+        width: 85%;
+        margin: auto;
+        .app__form{
+            width: 50%;
+            h2{
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .puntaje{
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;  
+                .fa-star{
+                    height: 32px;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 30px;
+                    color: rgb(198, 194, 194);
+                    transition: color .5s;
+                }
+                .btn__star--active{
+                    color: rgb(240, 240, 11);
+                }
+            }
+            @media only screen and (max-width: 920px){
+                &{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

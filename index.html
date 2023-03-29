@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManGama-Chan</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/icono_app.png" type="image/png">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Script -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/3783c670b9.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav__conteiner">
+            <a href="#" class="nav__links">
+                <img src="img/icono_app.png" alt="" width="50"> ManGama-Chan
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="app">
+            <div class="app__content">
+                <div class="app__details">
+                    <h1 class="app__title">ManGamaChan</h1>
+                    <a href="#LAF" class="app__links">Grupo LAF</a>
+                    <P>No contiene anuncios xD</P>
+                    <a class="app__btnDownload" href="download/ManGamaChan.apk" download="ManGamaChan_v1">
+                        Descargar APK
+                    </a>
+                </div>
+                <div class="app__image">
+                    <img src="img/icono_app.png" alt="" width="80">
+                </div>
+            </div>
+            <div class="app__content_2">
+                <div class="app__slider">
+                    <img src="img/slider/mangamachan_slider_1.jpg" alt="" class="slider__img slider__img--visible">
+                    <img src="img/slider/mangamachan_slider_2.jpg" alt="" class="slider__img">
+                    <img src="img/slider/mangamachan_slider_3.jpg" alt="" class="slider__img">
+                    <button class="fa-solid fa-chevron-left slider__btn slider__btn--left" id="slider__btn--left" onclick="anterior()"></button>
+                    <button class="fa-solid fa-chevron-right slider__btn slider__btn--right" id="slider__btn--right" onclick="siguiente()"></button>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Informacion de contacto del desarrollador
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body contact__links">
+                                <a href="https://alexandermontoya.github.io/portafolio-personal/" class="link__content">
+                                    <div class="link__icon fa-solid fa-globe"></div>
+                                    <div class="link__details">
+                                        <Strong>Portafolio personal</Strong>
+                                        <p>https://alexandermontoya.github.io/portafolio-personal/</p>
+                                    </div>
+                                </a>
+                                <a href="mailto:montinformatic233@gmail.com" class="link__content">
+                                    <div class="link__icon fa-solid fa-envelope"></div>
+                                    <div class="link__details">
+                                        <Strong>Correo electrónico</Strong>
+                                        <p>montinformatic233@gmail.com</p>
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/alexander-josu%C3%A9-montoya-bonifacio/" class="link__content">
+                                    <div class="link__icon fa-brands fa-linkedin"></div>
+                                    <div class="link__details">
+                                        <Strong>Linkedin</Strong>
+                                        <p>Alexander Josue Montoya Bonifacio</p>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/AlexanderMontoya" class="link__content">
+                                    <div class="link__icon fa-brands fa-github"></div>
+                                    <div class="link__details">
+                                        <Strong>GitHub</Strong>
+                                        <p>Alexander Montoya</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="LAF">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Sobre el grupo LAF
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body contact__links">
+                                <a href="https://alexandermontoya.github.io/portafolio-personal/" class="link__content">
+                                    <div class="link__icon fa-solid fa-laptop-code"></div>
+                                    <div class="link__details">
+                                        <Strong>Desarrollador</Strong>
+                                        <p>Alexander Josue Montoya Bonifacio</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="link__content">
+                                    <div class="link__icon fa-solid fa-palette"></div>
+                                    <div class="link__details">
+                                        <Strong>Diseño</Strong>
+                                        <p>Fiorella Cinthya Zarate Meza</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="link__content">
+                                    <div class="link__icon fa-solid fa-database"></div>
+                                    <div class="link__details">
+                                        <Strong>Base de datos</Strong>
+                                        <p>Luis Felipe Torres Oviedo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                </div>    
+            </div>
+            <div class="slider__main" id="slider__main">
+                <div class="slider__main--black"></div>
+                <img src="img/slider/mangamachan_slider_1.jpg" alt="" class="slider__main__img slider__main__img--visible">
+                <img src="img/slider/mangamachan_slider_2.jpg" alt="" class="slider__main__img">
+                <img src="img/slider/mangamachan_slider_3.jpg" alt="" class="slider__main__img">
+                <button class="fa-solid fa-chevron-left slider__btn slider__btn__main--left" onclick="anteriorMain()"></button>
+                <button class="fa-solid fa-chevron-right slider__btn slider__btn__main--right" onclick="siguienteMain()"></button>
+            </div>   
+        </section>
+        <section class="form">
+            <div class="form__content">
+                <form class="app__form" action="https://formsubmit.co/468e3609ea1919e9de1b3b413221dc68" method="POST">
+                    <div class="puntaje">
+                        <button type="button" value="1" class="fa-solid fa-star" aria-label="btnStar"></button>
+                        <button type="button" value="2" class="fa-solid fa-star" aria-label="btnStar"></button>
+                        <button type="button" value="3" class="fa-solid fa-star" aria-label="btnStar"></button>
+                        <button type="button" value="4" class="fa-solid fa-star" aria-label="btnStar"></button>
+                        <button type="button" value="5" class="fa-solid fa-star" aria-label="btnStar"></button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electronido</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo electronico" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comentario: </label>
+                        <textarea class="form-control" name="opinion" id="comment" rows="3" placeholder="Deje un comentario para saber en que podemos mejorar" required></textarea>
+                    </div>
+                    <input type="hidden" id="puntaje" name="score" value="0">
+                    <input type="hidden" name="_subject" value="Un comentario de Mangamachan!">
+                    <button type="submit" class="btn btn-success">Enviar Comentario</button>
+                </form>    
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        {Developed by Grupo LAF}
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

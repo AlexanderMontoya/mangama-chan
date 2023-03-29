@@ -1,0 +1,48 @@
+@use 'partials/mixins';
+.slider__main{
+    width: 100%;
+    height: 100%;
+    @include mixins.position-personalizado(fixed, 0px, 0px);
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &__img{
+        width: 400px;
+        display: none;
+        z-index: 10;
+        &--visible{
+            display: block;
+        }
+    }
+    .slider__btn{
+        @include mixins.botones();
+        z-index: 10;
+        &__main--left{
+            left: 10px;
+        }
+        &__main--right{
+            right: 10px;
+        }
+    }
+    &--black{
+        width: 100%;
+        height: 100%;
+        @include mixins.position-personalizado(absolute, 0px, 0px);
+        background-color: rgba(0, 0, 0, 0.814);
+    }
+    @media only screen and (max-width:550px){
+        &{
+            &__img{
+                width: 70%;
+            }
+        }
+    }
+    @media only screen and (max-width:425px){
+        &{
+            &__img{
+                width: 90%;
+            }
+        }
+    }
+}

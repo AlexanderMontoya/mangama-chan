@@ -1,0 +1,15 @@
+@use 'navbar';
+@use 'app';
+@use 'slider';
+@use 'sliderMain';
+@use 'accordion';
+@use 'form';
+
+/*Footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+}
