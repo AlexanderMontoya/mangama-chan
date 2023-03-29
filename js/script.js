@@ -1,7 +1,8 @@
 let slider__img=document.querySelectorAll('.slider__img');
 let slider__main__img=document.querySelectorAll('.slider__main__img');
 const puntajeButtons = document.querySelectorAll('.puntaje button');
-let cont=0;
+let cont1=0;
+let cont2=0;
 
 slider__img.forEach((cadaImg, i)=>{
     slider__img[i].addEventListener('click',()=>{
@@ -10,6 +11,7 @@ slider__img.forEach((cadaImg, i)=>{
         slider__main__img.forEach((cadaTest, i)=>{
             slider__main__img[i].classList.remove('slider__main__img--visible');
         })
+        cont2=cont1;
         slider__main__img[i].classList.add('slider__main__img--visible')
     })
 })
@@ -33,41 +35,41 @@ puntajeButtons.forEach((button , i)=> {
 });
 
 function anterior(){
-    if(cont>0){
-        cont--;
+    if(cont1>0){
+        cont1--;
         slider__img.forEach((cadaTest, i)=>{
             slider__img[i].classList.remove('slider__img--visible');
         })
-        slider__img[cont].classList.add('slider__img--visible')
+        slider__img[cont1].classList.add('slider__img--visible')
     }
 }
 
 function anteriorMain(){
-    if(cont>0){
-        cont--;
+    if(cont2>0){
+        cont2--;
         slider__main__img.forEach((cadaTest, i)=>{
             slider__main__img[i].classList.remove('slider__main__img--visible');
         })
-        slider__main__img[cont].classList.add('slider__main__img--visible')
+        slider__main__img[cont2].classList.add('slider__main__img--visible')
     }
 }
 
 function siguiente(){
-    if(cont+1<slider__img.length){
-        cont++;
+    if(cont1+1<slider__img.length){
+        cont1++;
         slider__img.forEach((cadaTest, i)=>{
             slider__img[i].classList.remove('slider__img--visible');
         })
-        slider__img[cont].classList.add('slider__img--visible');
+        slider__img[cont1].classList.add('slider__img--visible');
     }
 }
 
 function siguienteMain(){
-    if(cont+1<slider__main__img.length){
-        cont++;
+    if(cont2+1<slider__main__img.length){
+        cont2++;
         slider__main__img.forEach((cadaTest, i)=>{
             slider__main__img[i].classList.remove('slider__main__img--visible');
         })
-        slider__main__img[cont].classList.add('slider__main__img--visible');
+        slider__main__img[cont2].classList.add('slider__main__img--visible');
     }
 }
